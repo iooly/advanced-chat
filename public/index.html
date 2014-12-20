@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="components/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="css/flags.css">
   <link rel="stylesheet" href="css/app.css">
+
+  <link rel="stylesheet" href="kind-editor/default/default.css">
 </head>
 <body>
   <div class="main col-md-6 col-md-offset-3">
@@ -31,7 +33,7 @@
         <div id="conversation">
           <ul id="msgs" class="list-unstyled"></ul>
         </div>
-        <form id="chatForm" class="form-inline">
+        <form id="chatForm" class="form-inline ke-container ke-container-default">
           <div class="form-group">
             <input type="text" class="form-control input-lg" placeholder="Your message" id="msg">
           </div>
@@ -80,5 +82,7 @@
   <script src="components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="/socket.io/socket.io.js"></script>  
   <script src="js/client.js"></script>
+  <script charset="utf-8"  src="kind-editor/kindeditor-all-min.js"></script>
+  <script charset="utf-8" src="kind-editor/lang/zh_CN.js"></script>
 </body>
 </html>
