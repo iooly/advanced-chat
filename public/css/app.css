@@ -8,7 +8,8 @@
 #conversation {
   font-size: 18px;
   margin: 0px;
-  height: 300px;
+  width: 1200px;
+  height: 500px;
   overflow: scroll;
 }
 .final {
