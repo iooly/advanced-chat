@@ -119,12 +119,10 @@ $(document).ready(function() {
 
   //main chat screen
   $("#chatForm").submit(function() {
-    //var msg = $("#msg").val();
-
     var msg =  window.editor.html();
     if (msg !== "") {
       socket.emit("send", msg);
-      $("#msg").val("");
+       window.editor.html('');
     }
   });
 
