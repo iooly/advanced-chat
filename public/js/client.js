@@ -119,7 +119,9 @@ $(document).ready(function() {
 
   //main chat screen
   $("#chatForm").submit(function() {
-    var msg = $("#msg").val();
+    //var msg = $("#msg").val();
+
+    var msg =  window.editor.html();
     if (msg !== "") {
       socket.emit("send", msg);
       $("#msg").val("");
@@ -391,7 +393,6 @@ socket.on("history", function(data) {
   socket.on("disconnect", function(){
     $("#msgs").append("<li><strong><span class='text-warning'>The server is not available</span></strong></li>");
     $("#msg").attr("disabled", "disabled");
-    $("#send").attr("disabled", "disabled");
   });
 
 });
